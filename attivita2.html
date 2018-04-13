@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function funzione()
+{
+	var nome=document.forms["form1"]["nome"].value;
+	var cognome=document.forms["form1"]["cognome"].value;
+	var anno=document.forms["form1"]["anno di nascita"].value;
+	if(anno<=2000)
+	document.write("Benvenuto "+nome+" "+cognome);
+	else
+	document.write("Utente non autorizzato");
+}
+</script>
+
+</head>
+
+<body>
+
+<form id="form1" name="form1">
+Nome <input name="nome" type="text" />
+Cognome <input name="cognome" type="text" />
+Anno <input name="anno di nascita" type="text" />
+<input type="button" value="Entra" onclick="funzione()" />
+
+</form>
+</body>
+</html>
